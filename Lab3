@@ -1,0 +1,36 @@
+#Created by :Jonathan J. Quintero Ramos and Jesus "chui" Gomez
+#created 2/1/19
+#lab 3 for cst205
+
+
+color_dictionary={"red":[255,0,0], "green":[0,128,0], "magenta":[255,0,255], "cyan": [0,255,255], "yellow":[255,255,0]}
+#for the list the [0] index is red
+#the [1] index is green and [2] is blue
+
+def printingChannelSimple(color, key):
+	colorString= ""
+
+	if( color == 0):
+		colorString="red"
+	if ( color == 1):
+		colorString = "green"
+	if ( color == 2):
+		colorString = "blue"
+
+	print("The " + colorString + " channel of " + key + " has value value " + str(color_dictionary[key][color]))
+
+#printingChannelSimple(2, "magenta")
+
+def printingChannelOdd(letter2):
+	for k, v in color_dictionary.items():
+		if k[1] == letter2 :
+			print (v)
+
+#printingChannelOdd('e')
+
+tineye_sample = {"result": [{"color":(141,125,83),"weigth":76.37,"name":"Clay Creek","rank": 1, "class":"Grey"}]}
+
+print(tineye_sample["result"][0]["color"][0])
+
+
+
